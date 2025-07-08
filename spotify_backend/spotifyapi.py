@@ -17,6 +17,3 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=clientID,
 def searchForAlbumCover(albumName):
     results = sp.search(q=albumName, limit=1, type="album")
     return results['albums']['items'][0]["images"][1]["url"]
-
-results = sp.current_user_saved_tracks()
-print(results)
