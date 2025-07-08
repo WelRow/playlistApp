@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>128</width>
+    <height>169</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>128</width>
+     <height>169</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border-radius: 8px;
+background-color: rgb(217, 217, 217);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_playlistImage">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>11</y>
+     <width>100</width>
+     <height>105</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 25, 163);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="_playlistName">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Semibold</family>
+     <italic>false</italic>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>PlaylistName</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
