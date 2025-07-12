@@ -138,7 +138,7 @@ class Ui_LoginWindow(object):
         LoginWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(LoginWindow)
-        self.windowStackWidget.setCurrentIndex(1)
+        self.windowStackWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(LoginWindow)
 
     def retranslateUi(self, LoginWindow):
