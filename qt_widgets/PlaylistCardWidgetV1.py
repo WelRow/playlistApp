@@ -5,9 +5,9 @@
 from PyQt6.QtWidgets import QWidget
 from PyQt6.QtGui import QPixmap, QPainter, QBrush
 from PyQt6.QtCore import Qt
-from spotify_backend import spotifyapi
+from requests import get
 
-from PlaylistCardV1 import PlaylistCard
+from qt_widgets.PlaylistCardV1 import PlaylistCard
 
 class CustomPlaylistCard(QWidget):
     def __init__(self, parent=None):
@@ -23,7 +23,7 @@ class CustomPlaylistCard(QWidget):
 
         # Load the playlist image from the URL
         try:
-            response = spotifyapi.searchForAlbumCover(name)
+            response = get(image_url)
             
             pixmap = QPixmap()
             pixmap.loadFromData(response.content)
