@@ -38,6 +38,7 @@ class MainWindow(QMainWindow):
     def loadPlaylists(self):
         targetLayout = self.ui.gridLayout
 
+        # If there's playlists already loaded, they will be deleted
         while targetLayout.count():
             child = targetLayout.takeAt(0)
             if child.widget():
