@@ -29,7 +29,25 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: #404040;</string>
+   </property>
    <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
     <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="styleSheet">
@@ -38,11 +56,38 @@
       <property name="currentIndex">
        <number>1</number>
       </property>
-      <widget class="QWidget" name="page">
+      <widget class="QWidget" name="page1">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <layout class="QVBoxLayout" name="verticalLayout_8">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
          <widget class="QWidget" name="widget_5" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_9">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>11</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
            <item>
             <widget class="QLabel" name="label">
              <property name="font">
@@ -73,10 +118,44 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="page2">
+       <property name="styleSheet">
+        <string notr="true">
+#homePage, #playlistPage, #scrollAreaWidgetContents, #widget {
+	background-color: #F6EFEB;
+}
+#homeButton, #playlistButton {
+	text-align: left;
+	border: none;
+	background-color: transparent;
+	background: none;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+QLabel {
+	color: black;
+	background-color: #F6EFEB;
+}</string>
+       </property>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item alignment="Qt::AlignmentFlag::AlignLeft">
-         <widget class="QWidget" name="menuFram_2" native="true">
+         <widget class="QWidget" name="menuFrame" native="true">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -84,9 +163,36 @@
            </size>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_10">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item alignment="Qt::AlignmentFlag::AlignTop">
             <widget class="QWidget" name="widget_4" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <layout class="QVBoxLayout" name="verticalLayout">
+              <property name="spacing">
+               <number>15</number>
+              </property>
+              <property name="leftMargin">
+               <number>11</number>
+              </property>
+              <property name="topMargin">
+               <number>11</number>
+              </property>
               <item>
                <widget class="QPushButton" name="homeButton">
                 <property name="font">
@@ -140,6 +246,21 @@
         <item>
          <widget class="QWidget" name="mainFrame" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>11</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
+           <property name="rightMargin">
+            <number>11</number>
+           </property>
+           <property name="bottomMargin">
+            <number>11</number>
+           </property>
            <item>
             <widget class="QStackedWidget" name="stackedWidget_2">
              <property name="currentIndex">
@@ -147,9 +268,36 @@
              </property>
              <widget class="QWidget" name="homePage">
               <layout class="QVBoxLayout" name="verticalLayout_4">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item alignment="Qt::AlignmentFlag::AlignHCenter">
                 <widget class="QWidget" name="widget" native="true">
                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
                    <widget class="QLabel" name="comingSoonLabel">
                     <property name="font">
@@ -168,10 +316,45 @@
               </layout>
              </widget>
              <widget class="QWidget" name="playlistPage">
+              <property name="styleSheet">
+               <string notr="true">#widget_2, #widget_3 {
+background-color: #F6EFEB;
+}</string>
+              </property>
               <layout class="QVBoxLayout" name="verticalLayout_5">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item alignment="Qt::AlignmentFlag::AlignTop">
                 <widget class="QWidget" name="widget_2" native="true">
                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>11</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>11</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>11</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>11</number>
+                  </property>
                   <item>
                    <widget class="QLabel" name="label_2">
                     <property name="font">
@@ -190,6 +373,18 @@
                <item>
                 <widget class="QWidget" name="widget_3" native="true">
                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
                   <item>
                    <widget class="QScrollArea" name="scrollArea">
                     <property name="widgetResizable">
@@ -200,8 +395,8 @@
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>540</width>
-                       <height>348</height>
+                       <width>666</width>
+                       <height>443</height>
                       </rect>
                      </property>
                     </widget>
