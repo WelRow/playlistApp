@@ -15,20 +15,20 @@ class MainWindow(QMainWindow):
         self.playlists_loaded = False
         
     def connectSignals(self):
-        self.ui._loginButton.clicked.connect(self.handleLogin)
-        self.ui._homeButton.clicked.connect(self.showHomePage)
-        self.ui._playlistButton.clicked.connect(self.showPlaylistPage)
+        self.ui.loginButton.clicked.connect(self.handleLogin)
+        self.ui.homeButton.clicked.connect(self.showHomePage)
+        self.ui.playlistButton.clicked.connect(self.showPlaylistPage)
 
     def handleLogin(self):
         # Spotify Authentication
         self.sp = SpotifyClient()
-        self.ui.windowStackWidget.setCurrentIndex(1)
+        self.ui.stackedWidget.setCurrentIndex(1)
     
     def showHomePage(self):
-        self.ui.feedStackedWidget.setCurrentIndex(0)
+        self.ui.stackedWidget_2.setCurrentIndex(0)
 
     def showPlaylistPage(self):
-        self.ui.feedStackedWidget.setCurrentIndex(1)
+        self.ui.stackedWidget_2.setCurrentIndex(1)
 
         if not self.playlists_loaded:
             print("Loading playlists for the first time...")
@@ -36,7 +36,7 @@ class MainWindow(QMainWindow):
             self.playlists_loaded = True
     
     def loadPlaylists(self):
-        targetLayout = self.ui.gridLayout
+        targetLayout = self.ui.gridLayout_3
 
         # If there's playlists already loaded, they will be deleted
         while targetLayout.count():
