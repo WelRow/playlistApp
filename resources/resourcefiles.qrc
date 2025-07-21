@@ -1,6 +1,7 @@
 <RCC>
-  <qresource prefix="icons">
-    <file>homeicon.svg</file>
-    <file>playlisticon.svg</file>
-  </qresource>
+    <qresource prefix="/icons">
+        <file>homeicon.svg</file>
+        <file>playlisticon.svg</file>
+        <file>playalongLogo.png</file>
+    </qresource>
 </RCC>
