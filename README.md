@@ -2,7 +2,7 @@
 
 This is not a finished 'app.'
 
-This is a public prototype. A sketch. The code is part of the conversation. The scaffolding is the sculpture for now.
+PLAY ALONG is a social sound platform where you take your playlists apart, with community. It’s a design studio for treating sound like a blueprint, starting a dialogue, and turning a finished list of songs into a live conversation.
 
 v0.1
 
